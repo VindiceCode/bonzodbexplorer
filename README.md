@@ -2,12 +2,45 @@
 
 This project provides a Python-based tool for extracting and querying data from the Bonzo API. It leverages the dlt (Data Loading Tool) library to create a data pipeline that dynamically queries the Bonzo API based on user input, specifically focusing on extracting prospects associated with a given pipeline stage. The tool is designed to be a proof of concept (POC) for interacting with the Bonzo API, showcasing the ability to quickly and efficiently pull records associated with the authenticated user's API key.
 
+
 ## Features
 
 - **Dynamic API Key Input:** Allows users to input their Bonzo API key at runtime, ensuring that data extraction is performed under the correct authentication context.
 - **Pipeline Stage Querying:** Users can specify the pipeline stage for which they wish to query prospects, making the tool flexible for various data extraction needs.
 - **Streamlit Integration:** The extracted data can be viewed and analyzed using Streamlit, providing a simple yet powerful interface for data exploration and querying.
 - **Fast and Efficient:** The tool is capable of checking a large number of records in a short amount of time, returning only the records assigned to the user associated with the provided API key.
+
+
+## Preparing Target Prospects in Bonzo for Extraction
+
+To effectively use the Bonzo Data Extraction Tool for targeting specific prospects, follow these steps within your Bonzo account to prepare your data, particularly for extraction of a large amount of records at once:
+
+**Note: if you already have a target pipeline id stage in mind, and prospects in it - skip this step - moving prospects in mass out of pipeline stages is not reversible with ease, user beware**
+
+1. **Select Target Prospects in Bonzo:** Begin by navigating to the People View in your target Bonzo account. Here, you can identify and select the prospects you wish to target.
+
+
+2. **Move Prospects to a Staging Stage:** After identifying your target prospects, move them to a "Staging" stage using the Pipeline Stage Move button at the bottom of the People View once you have selected your records in mass. 
+
+The stage you select should be one that does not trigger any automations (a safe stage), ensuring that your actions do not inadvertently affect your prospects. This preparation step is crucial for cleanly extracting the data without impacting your ongoing marketing or sales processes.
+
+    ![Assigning People to a Pipeline Stage in Mass](assets/assigning-people-to-stage.png)
+
+3. **Notate the Stage ID:** To extract prospects from this specific stage, you'll need the stage ID. Navigate to `Pipelines` > click on the gear icon in the top right-hand corner to open options > select `Manage Stages`. Then, click on the "Staging" stage. The URL in your browser's address bar will change to include the stage ID. Note this ID as it will be required when using the extraction tool.
+
+    ![Mass Move People to Pipeline](assets/step1_massmovepeopletopipeline.png)
+
+    ```plaintext
+    Example URL: http://app.getbonzo.com/pipelines/stages/12345
+    Focus on the Stage ID: 12345
+    ```
+
+    ![URL Showing Stage ID](assets/stageid.png)
+
+By following these steps, you prepare your target prospects in Bonzo for extraction. Once the prospects are staged appropriately, you can use the Bonzo Data Extraction Tool to specify the stage ID during the extraction process. 
+
+This allows for a focused extraction of data, enabling further analysis, querying, and downloading of the list directly from the data application our project provides. As we continue to develop and add resources to the pipeline, these capabilities will expand, offering more robust data manipulation and analysis options.
+
 
 ## Prerequisites
 
