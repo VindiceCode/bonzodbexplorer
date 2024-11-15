@@ -9,6 +9,11 @@ This project provides a Python-based tool for extracting and querying data from 
 - **Streamlit Integration:** The extracted data can be viewed and analyzed using Streamlit, providing a simple yet powerful interface for data exploration and querying.
 - **Fast and Efficient:** The tool is capable of checking a large number of records in a short amount of time, returning only the records assigned to the user associated with the provided API key.
 
+<div style="position: relative; padding-bottom: 62.5%; height: 0;">
+    <iframe src="https://www.loom.com/embed/ad9b349287934e2a8d3901ff9e2251e5?sid=0b98253c-8c84-4f00-88f0-e638ce2b86f5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
+
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
