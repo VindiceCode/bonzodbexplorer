@@ -36,6 +36,16 @@ To use the Bonzo Data Extraction Tool, follow these steps:
 
 The script will execute the data extraction process and output the results. To view and analyze the extracted data, use the Streamlit interface by running:
 
+
+```python
+    dlt pipeline rest_api_bonzo show
+```
+
+
+dlt pipeline rest_api_bonzo show
+
+
+
 ![Main DLT Hub](assets/maindlthub.png)
 
 ![Load Info](assets/loadinfo.png)
