@@ -1,0 +1,17 @@
+# ignore secrets, virtual environments and typical python compilation artifacts
+secrets.toml
+# ignore basic python artifacts
+.env
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+# ignore duckdb
+*.duckdb
+*.wal
+# ignore dlt configuration and assets
+.dlt
+assets/loadinfo.png
+assets/maindlthub.png
+# ignore setup guides and staging
+setupguides/
+staging/

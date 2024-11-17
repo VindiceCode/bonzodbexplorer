@@ -28,14 +28,14 @@ The stage you select should be one that does not trigger any automations (a safe
 
 3. **Notate the Stage ID:** To extract prospects from this specific stage, you'll need the stage ID. Navigate to `Pipelines` > click on the gear icon in the top right-hand corner to open options > select `Manage Stages`. Then, click on the "Staging" stage. The URL in your browser's address bar will change to include the stage ID. Note this ID as it will be required when using the extraction tool.
 
-    ![Mass Move People to Pipeline](assets/step1_massmovepeopletopipeline.png)
+    ![Mass Move People to Pipeline](step1_massmovepeopletopipeline.png)
 
     ```plaintext
     Example URL: http://app.getbonzo.com/pipelines/stages/12345
     Focus on the Stage ID: 12345
     ```
 
-    ![URL Showing Stage ID](assets/stageid.png)
+    ![URL Showing Stage ID](stageid.png)
 
 By following these steps, you prepare your target prospects in Bonzo for extraction. Once the prospects are staged appropriately, you can use the Bonzo Data Extraction Tool to specify the stage ID during the extraction process. 
 
@@ -79,9 +79,9 @@ dlt pipeline rest_api_bonzo show
 
 
 
-![Main DLT Hub](assets/maindlthub.png)
+![Main DLT Hub](maindlthub.png)
 
-![Load Info](assets/loadinfo.png)
+![Load Info](loadinfo.png)
 
 ## Extending Functionality for Multiple Users
 
