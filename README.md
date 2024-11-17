@@ -22,13 +22,15 @@ To effectively use the Bonzo Data Extraction Tool for targeting specific prospec
 
 2. **Move Prospects to a Staging Stage:** After identifying your target prospects, move them to a "Staging" stage using the Pipeline Stage Move button at the bottom of the People View once you have selected your records in mass. 
 
+![Mass Move People to Pipeline](step1_massmovepeopletopipeline.png)
+
 The stage you select should be one that does not trigger any automations (a safe stage), ensuring that your actions do not inadvertently affect your prospects. This preparation step is crucial for cleanly extracting the data without impacting your ongoing marketing or sales processes.
 
-    ![Assigning People to a Pipeline Stage in Mass](assets/assigning-people-to-stage.png)
+
 
 3. **Notate the Stage ID:** To extract prospects from this specific stage, you'll need the stage ID. Navigate to `Pipelines` > click on the gear icon in the top right-hand corner to open options > select `Manage Stages`. Then, click on the "Staging" stage. The URL in your browser's address bar will change to include the stage ID. Note this ID as it will be required when using the extraction tool.
 
-    ![Mass Move People to Pipeline](step1_massmovepeopletopipeline.png)
+    
 
     ```plaintext
     Example URL: http://app.getbonzo.com/pipelines/stages/12345
